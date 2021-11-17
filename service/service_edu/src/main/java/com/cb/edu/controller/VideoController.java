@@ -47,6 +47,7 @@ public class VideoController {
         if(!StringUtils.isEmpty(videoSourceId)){
             vodClient.deletevdo(videoSourceId);
         }
+        System.out.println(1);
         videoService.removeById(id);
         return R.ok();
     }
